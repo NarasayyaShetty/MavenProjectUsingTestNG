@@ -28,8 +28,9 @@ public class TestCase01 {
     }
 
     @Test(description="testcase o1")
-    public void testcase01(){
+    public void testcase01() throws InterruptedException {
         Assert.assertTrue(homePage.isHomePage(),"Unable to navigate to homepage");
+        Thread.sleep(2000);
         homePage.clickRegisterButton();
         Assert.assertTrue(registerPage.isRegisterPage(),"Unable to navigate to register page");
 
