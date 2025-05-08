@@ -33,7 +33,7 @@ public class TestCase01 {
 
        Assert.assertTrue(homePage.isHomePage());
        homePage.clickRegisterButton();
-       
+
 
     }
 
